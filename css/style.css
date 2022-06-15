@@ -33,7 +33,6 @@
 .left {
   width: 80%;
   height: 200px;
-  background-color: pink;
   float: left;
 }
 
@@ -41,7 +40,6 @@
   width: 20%;
   height: 200px;
   line-height: 200px;
-  background-color: palevioletred;
   float: right;
 }
 .right img { 
@@ -66,3 +64,20 @@ h4, p {
   font-size:18px;
   padding-top: 10px;
 }
+
+.navbar li {
+  display:inline;
+  width: 60px;
+  text-align: center;
+  background: #eee;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.navbar a {
+  font-size: 16px;
+  text-decoration: none;
+  color : black;
+}
+
+
