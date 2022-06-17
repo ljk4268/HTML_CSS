@@ -116,10 +116,25 @@ body {
 
 .logo {
   font-size: 25px;
-  font-weight: bold;
 }
 .nav-item{
   margin-right: 20px;
   font-size: 15px;
 
+}
+
+/* 현재 브라우저 폭이 1200px 이하일 경우 */
+@media screen and (max-width: 1200px){
+  .main-title {
+    font-size: 30px;
+  }
+  .nav-item {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .main-title {
+    font-size: 20px;
+  }
 }
