@@ -1,5 +1,4 @@
 /* @import "./reset.css"; */
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 div,input,textarea {
   box-sizing: border-box;
@@ -8,7 +7,6 @@ div,input,textarea {
 
 body { 
   margin: 0;
-  font-family: 'Raleway', sans-serif;
 }
 
 .main-background {
@@ -106,4 +104,22 @@ body {
   float: right;
   padding: 10px 20px;
   margin-top: -10px;
+}
+
+/* flex */
+.nav-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+.nav-item{
+  margin-right: 20px;
+  font-size: 15px;
+
 }
