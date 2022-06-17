@@ -17,6 +17,16 @@ div {
   text-align: center; /*글자들 가운데에 올 수 있게 정렬 */
 }
 
+.container i { /*각 아이콘들에 배경 넣기 위한 css코드  */
+  background-color: burlywood;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px; /*둥글게 만들기 위한 코드 */
+  line-height: 80px; /*아이콘들 가운데 오게 하기 위한 코드 */
+  box-sizing: border-box; /*padding값포함해서 가로 세로 80px 만들기 위한 코드  */
+  color: white;
+  margin-top: 10px;
+}
 
 @media screen and (max-width : 768px) { 
   .container {
