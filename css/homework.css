@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+div { 
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 30px;
+  display: flex; /*flex속성으로 item들 가로정렬*/
+  background: #eee;
+}
+.item{
+  width: 25%; /*각 item들 가로를 25%줘서 크기 동일하게 만듬. */
+  text-align: center; /*글자들 가운데에 올 수 있게 정렬 */
+}
+
+
+@media screen and (max-width : 768px) { 
+  .container {
+    flex-wrap: wrap; /*요소들을 여러 줄에 걸쳐 정렬 */
+  }
+  .item{
+    width: 50%; /* 한 줄에 2개씩 정렬되게 item 하나에 가로폭 50% 줌 */
+    text-align: center;
+  }
+} 
+
+@media screen and (max-width : 576px) { 
+  .container {
+    flex-direction: column; /*세로정렬이 되게 column 해줌  */
+    align-items: center;
+  }
+  .item{
+    flex-grow: 1;
+  }
+} 
