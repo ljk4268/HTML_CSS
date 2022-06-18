@@ -4,6 +4,9 @@ div,input,textarea {
   box-sizing: border-box;
 }
 
+p {
+margin: 0;
+}
 
 body { 
   margin: 0;
@@ -144,17 +147,40 @@ body {
   width: 100%;
   display: block; /* 이미지요소 아래 생기는 작은 갭 없애는 용도 */
 }
-.overlay {
+
+.overlay-wrap {
   position: absolute;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+.overlay-wrap:hover .overlay-black {
+  margin-top: 50%;
+}
+
+.overlay-black {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  margin-top: 100%;
+  transition: all 1s;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 50%;
   background: rgba(0,0,0,0.5); /* 불투명하게 만드는것!  */
   opacity: 0; /* 시작스타일은  opacity: 0 마지막스타일은 opacity: 1 */
   transition: all 1s; /* 애니메이션을 주는 요소. 위에 있는 스타일이 변하면 1초동안 서서히 변경해주세요. 라는 의미.  */
+  padding: 10px;
 }
+
 .overlay:hover{
   opacity: 1; /* 시작스타일은  opacity: 0 마지막스타일은 opacity: 1 */
 }
+
 
 
 

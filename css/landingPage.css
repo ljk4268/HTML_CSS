@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+}
+.wrap {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  background: #eee;
+  height: 1000px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  background: linear-gradient(rgb(99, 181, 223), rgb(90, 88, 225));
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+}
+
+.text-box {
+  padding: 10px;
+  color: white;
+  font-size: 19px;
+}
+
+.text {
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+.btn {
+  padding: 10px;
+  background: rgb(64, 57, 57);
+  border-radius: 5px;
+  color: white;
+  border: 1px solid rgb(64, 57, 57);
+  cursor: pointer;
+}
+
+.top-img {
+  width: 30%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+}
+
+.middle-text {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0 ;
+}
+
+.offer-container { 
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  background: rgb(90, 88, 225);
+  padding: 30px 40px;
+  box-sizing: border-box;
+}
+
+.offer-top {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.offer-content {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.offer-content .item {
+  width: 25%;
+}
+.item i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  background: white;
+  color: rgb(90, 88, 225);
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
