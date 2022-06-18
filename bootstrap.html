@@ -46,28 +46,85 @@
       </div>
     </div>
   </nav>
-  <!-- 오늘의 숙제 -->
-  <div class="container pt-3">
-    <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
-      <img src="https://via.placeholder.com/50" class="card-img-top" alt="...">
-      <div class="card-body">
-        <span class="badge text-bg-primary mb-2">New</span>
-        <h5 class="card-title fs-5">Blog post title</h5>
-        <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <div class="d-flex align-items-center">
-          <div class="flex-shrink-0">
-            <img src="https://via.placeholder.com/40" class="rounded-circle" alt="...">
+  <!-- 반응형 레이아웃 부트스트랩으로 만들기 -->
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="card shadow">
+          <img src="./img/photo1.jpeg" class="card-img-top">
+          <div class="card-body">
+            <span class="badge rounded-pill bg-primary">News</span>
+            <h4 class="mt-2">Blog Post Title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
-          <div class="flex-grow-1 ms-3">
-            Kelly Rowan
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card shadow">
+          <img src="./img/photo1.jpeg" class="card-img-top">
+          <div class="card-body">
+            <span class="badge rounded-pill bg-primary">News</span>
+            <h4 class="mt-2">Blog Post Title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
-          <div class="flex-grow-1 ms-2">
-            
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card shadow">
+          <img src="./img/photo1.jpeg" class="card-img-top">
+          <div class="card-body">
+            <span class="badge rounded-pill bg-primary">News</span>
+            <h4 class="mt-2">Blog Post Title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="card shadow">
+          <img src="./img/photo1.jpeg" class="card-img-top">
+          <div class="card-body">
+            <span class="badge rounded-pill bg-primary">News</span>
+            <h4 class="mt-2">Blog Post Title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
       </div>
     </div>
+  </div> -->
+
+  <!-- class에 col을 넣으면 가로배치가 됨.  -->
+  <!-- class에 col을 넣지 않으면 세로배치가 됨. -->
+  <div class="container">
+    <!-- 이미지 옆에 컨텐츠를 세로로 가운데에 배치하고 싶다 -->
+    <div class="row d-flex align-items-center">
+      <div class="col-2 col-md-2 order-md-2">
+        <img src="./img/author.png" width="100%">
+      </div>
+      <div class="col-10 col-md-5 order-md-1 text-md-end">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+      <div class="col-md-5 order-md-3"></div>
+    </div>
+
+    <div class="row d-flex align-items-center">
+      <div class="col-2 col-md-2 order-md-2">
+        <img src="./img/author2.png" width="100%">
+      </div>
+      <div class="col-10 col-md-5 order-md-3 text-md-start">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+      <div class="col-md-5 order-md-1"></div>
+    </div>
+
   </div>
+
+  
+
+
+
+      
+
+  
   
   
 
