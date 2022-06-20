@@ -2,6 +2,18 @@ body {
   margin: 0;
 }
 
+#blue {
+  background: #6fbaf8;
+  border: none;
+}
+
+.cute-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+
+}
+
 .main-container {
   max-width: 1200px;
   margin: 0;
@@ -29,5 +41,38 @@ body {
 .box > div {
   margin-bottom: 10px;
 }
+
+
+.mid {
+  margin-top: 50px;
+}
+
+
+.text-box {
+  font-size: 13px;
+  margin-bottom: 50px;
+  letter-spacing: 0.4px;
+
+}
+.text-box > p {
+  margin-bottom: 4px;
+}
+
+.bar {
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.skills {
+  display: flex;
+}
+.skills > p {
+  padding: 3px 12px 5px 12px;
+  border: 1px solid #6fbaf8;
+  border-radius: 50px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
 
 
