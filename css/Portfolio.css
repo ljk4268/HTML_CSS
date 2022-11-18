@@ -15,15 +15,17 @@ body {
 }
 
 .main-container {
+  width: 100%;
   max-width: 1200px;
-  margin: 0;
+  margin: auto;
   background: #f7f9fc;
   padding: 20px;
 
 }
 .container {
   width: 80%;
-  margin: 0;
+  max-width: 1000px;
+  margin: auto;
 
 }
 .white-box {

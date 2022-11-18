@@ -1,49 +1,64 @@
 body {
   margin: 0;
 }
-div { 
+
+div {
   box-sizing: border-box;
 }
+
 .container {
   width: 100%;
   max-width: 1000px;
   margin: auto;
   padding: 20px 30px;
-  display: flex; /*flex속성으로 item들 가로정렬*/
+  display: flex;
+  /*flex속성으로 item들 가로정렬*/
   background: #eee;
 }
-.item{
-  width: 25%; /*각 item들 가로를 25%줘서 크기 동일하게 만듬. */
-  text-align: center; /*글자들 가운데에 올 수 있게 정렬 */
+
+.item {
+  width: 25%;
+  /*각 item들 가로를 25%줘서 크기 동일하게 만듬. */
+  text-align: center;
+  /*글자들 가운데에 올 수 있게 정렬 */
 }
 
-.container i { /*각 아이콘들에 배경 넣기 위한 css코드  */
+.container i {
+  /*각 아이콘들에 배경 넣기 위한 css코드  */
   background-color: burlywood;
   width: 80px;
   height: 80px;
-  border-radius: 50px; /*둥글게 만들기 위한 코드 */
-  line-height: 80px; /*아이콘들 가운데 오게 하기 위한 코드 */
-  box-sizing: border-box; /*padding값포함해서 가로 세로 80px 만들기 위한 코드  */
+  border-radius: 50px;
+  /*둥글게 만들기 위한 코드 */
+  line-height: 80px;
+  /*아이콘들 가운데 오게 하기 위한 코드 */
+  box-sizing: border-box;
+  /*padding값포함해서 가로 세로 80px 만들기 위한 코드  */
   color: white;
   margin-top: 10px;
 }
 
-@media screen and (max-width : 768px) { 
+@media screen and (max-width : 768px) {
   .container {
-    flex-wrap: wrap; /*요소들을 여러 줄에 걸쳐 정렬 */
+    flex-wrap: wrap;
+    /*요소들을 여러 줄에 걸쳐 정렬 */
   }
-  .item{
-    width: 50%; /* 한 줄에 2개씩 정렬되게 item 하나에 가로폭 50% 줌 */
+
+  .item {
+    width: 50%;
+    /* 한 줄에 2개씩 정렬되게 item 하나에 가로폭 50% 줌 */
     text-align: center;
   }
-} 
+}
 
-@media screen and (max-width : 576px) { 
+@media screen and (max-width : 576px) {
   .container {
-    flex-direction: column; /*세로정렬이 되게 column 해줌  */
+    flex-direction: column;
+    /*세로정렬이 되게 column 해줌  */
     align-items: center;
   }
-  .item{
+
+  .item {
     flex-grow: 1;
   }
-} 
+}
